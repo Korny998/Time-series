@@ -20,7 +20,7 @@ def load_series(url):
     )
 
 
-def make_datasets(data: pd.DataFrame):
+def make_datasets(data):
     train = data[:TRAIN_END]
     val = data[TRAIN_END:TEST_START]
     test = data[TEST_START:]
